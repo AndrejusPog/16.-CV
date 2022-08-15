@@ -1,0 +1,176 @@
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: "Heebo", sans-serif;
+}
+.header {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(161, 156, 156);
+  border-radius: 10px;
+  background-color: rgb(161, 157, 157);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.wrapper {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+.personalinfo .myphoto img {
+  border: 1px solid rgb(161, 156, 156);
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+}
+.personalinfo .myphoto img:hover {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.personalinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.personalinfo p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon {
+  display: flex;
+}
+.icon:hover {
+  height: 55px;
+  cursor: pointer;
+}
+.mainwrapper {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "about exp exp"
+    "about exp exp"
+    "skills skills skills";
+  color: rgb(119, 114, 114);
+}
+.mainwrapper .about {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+.mainwrapper .about p {
+  border-bottom: 1px dotted rgb(185, 152, 152);
+  padding-bottom: 10px;
+}
+
+.mainwrapper .skills {
+  grid-area: skills;
+}
+.skillbox {
+  background-color: rgb(87, 85, 85);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 5px;
+}
+.box {
+  text-align: right;
+  color: rgb(158, 154, 154);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.communication {
+  width: 85%;
+  background-color: rgb(37, 53, 37);
+}
+.cooking {
+  width: 75%;
+  background-color: rgb(37, 53, 37);
+}
+.office {
+  width: 72%;
+  background-color: rgb(37, 53, 37);
+}
+.javascript {
+  width: 1%;
+  background-color: rgb(37, 53, 37);
+}
+.mainwrapper .exp {
+  grid-area: exp;
+  min-width: 400px;
+}
+.year {
+  background-color: rgb(68, 31, 39);
+  color: rgb(192, 187, 181);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 5px;
+}
+.exp {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 60rem) {
+  .wrapper {
+    width: 70%;
+  }
+  .header {
+    justify-content: center;
+  }
+  .mainwrapper {
+    width: 100%;
+  }
+  .mainwrapper .about {
+    display: none;
+  }
+  .mainwrapper .exp {
+    justify-content: center;
+  }
+  .mainwrapper .skills {
+    width: 70%;
+    margin: auto;
+  }
+  .personalinfo .icon:nth-child(4) {
+    display: none;
+  }
+  .myphoto IMG {
+    width: 60%;
+    height: 60%;
+  }
+  .personalinfo {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .personalinfo .icon {
+    align-self: flex-start;
+  }
+  .exp{
+    display: flex;
+    flex-direction: column;
+  }
+  .skills{
+    padding-bottom: 50px;
+  }
+}
